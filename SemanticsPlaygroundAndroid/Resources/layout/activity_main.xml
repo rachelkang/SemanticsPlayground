@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to .NET MAUI Semantics!"
+                android:contentDescription="Welcome to dotnet MAUI Semantics!"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="30sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We hope the all-new SemanticProperties will enable you to develop accessible apps more seamlessly"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Turn on your screen reader and listen for what is read aloud. The android:text-based controls below are TextViewed to indicate what is expected to be read aloud: T refers to the android:text, D is the Description android:text, and H is the Hint android:text."
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView text TH"
+                android:textSize="14sp"
+                android:hint="Hint text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView text DH"
+                android:textSize="14sp"
+                android:contentDescription="Description text"
+                android:hint="Hint text"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button text TH"
+                android:textSize="14sp"
+                android:hint="Hint text"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button text DH"
+                android:textSize="14sp"
+                android:contentDescription="Description text"
+                android:hint="Hint text"/>
+
+            <!--<EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EditText text, iOS:DTH, Android:TH"
+                android:textSize="14sp"
+                android:contentDescription="Description text"
+                android:hint="Hint text" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:contentDescription="Description text"
+                android:hint="Hint text"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The next 3 controls read out iOS:DTH, Android:TH"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="16sp"/>
+
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Description text"
+                android:hint="Hint text"/>
+
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Description text"
+                android:hint="Hint text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The rest of the controls read out DH"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="16sp"/>
+
+            <ProgressBar
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/ctrlActivityIndicator"
+                android:indeterminateOnly="true"
+                android:keepScreenOn="true"
+                android:contentDescription="Description text"
+                android:hint="Hint text"/>
+
+            <ProgressBar
+                android:id="@+id/determinateBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progress="25"
+                android:contentDescription="Description text"
+                android:hint="Hint text"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="Description text"
+                android:hint="Hint text"/>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:contentDescription="Description text"
+                android:hint="Hint text"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:contentDescription="Description text"
+                android:hint="Hint text"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton text"
+                android:checked="true"
+                android:contentDescription="Description text"
+                android:hint="Hint text"/>
+
+            <ImageView
+                android:id="@+id/dotnetbot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="yes"
+                android:hint="Hint text"
+                android:src="@drawable/dotnetbot"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This next set of controls exist solely for testing the HeadingLevel property. If testing on mobile, be sure to activate Headings and swipe up/down with one finger to test."
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heading 1"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="20sp"
+                android:accessibilityHeading="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="not a heading"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heading 2"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="16sp"
+                android:accessibilityHeading="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="not a heading"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="not a heading"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heading 3"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="14sp"
+                android:accessibilityHeading="true"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
