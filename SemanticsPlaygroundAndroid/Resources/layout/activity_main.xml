@@ -37,7 +37,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Turn on your screen reader and listen for what is read aloud. The android:text-based controls below are TextViewed to indicate what is expected to be read aloud: T refers to the android:text, D is the Description android:text, and H is the Hint android:text."
+                android:text="Turn on your screen reader and listen for what is read aloud. The text-based controls below are labeled to indicate what is expected to be read aloud: T refers to the Text, D is the Description text, and H is the Hint text."
                 android:textColor="@android:color/holo_blue_dark"
                 android:textSize="16sp"/>
 
@@ -71,10 +71,10 @@
                 android:contentDescription="Description text"
                 android:hint="Hint text"/>
 
-            <!--<EditText
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="EditText text, iOS:DTH, Android:TH"
+                android:text="EditText text TH"
                 android:textSize="14sp"
                 android:contentDescription="Description text"
                 android:hint="Hint text" />
@@ -84,12 +84,12 @@
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
                 android:contentDescription="Description text"
-                android:hint="Hint text"/>-->
+                android:hint="Hint text"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="The next 3 controls read out iOS:DTH, Android:TH"
+                android:text="The next 3 controls read out, TH"
                 android:textColor="@android:color/holo_blue_dark"
                 android:textSize="16sp"/>
 
@@ -163,6 +163,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:importantForAccessibility="yes"
+                android:contentDescription="Description text"
                 android:hint="Hint text"
                 android:src="@drawable/dotnetbot"/>
 
